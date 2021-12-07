@@ -1,0 +1,13 @@
+name: Aldas
+main: eu.playerunion.Aldas.Main
+version: ${project.version}
+api-version: 1.16
+depend: [Vault, PlaceholderAPI, HolographicDisplays]
+authors: [szviktor]
+website: "https://www.playerunion.eu"
+description: "A PlayerUnion Szerverhálózat számára készült Áldás plugin."
+
+commands:
+  aldas:
+    description: "Áldás aktiválása és deaktiválása a szerveren."
+    usage: "/<command>"

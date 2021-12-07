@@ -1,0 +1,48 @@
+#A konfiguráció verziója.
+config-version: 1.0
+
+#Az áldásokkal kapcsolatos beállítások.
+beallitasok:
+  #Az áldások ideje másodpercben.
+  ido: 3600
+  #Beállítás arra, hogy a plugin betöltsön-e külső áldásokat.
+  kulsoAldasok: false
+  #Beállítás arra, hogy az elérhető áldások kitabolhatók legyenek-e.
+  automatikusKitoltes: true
+  
+  #Az áldás indításkor megjelenő tűzijáték beállításai.
+  tuzijatek:
+    #A tűzijáték állapota (hogy az áldás indulásakor fel legyen-e lőve, vagy sem).
+    allapot: true
+  
+  #Az áldások árai.
+  #Amennyiben külső áldást adsz hozzá a pluginhoz, neked kézzel be kell ide jegyezned annak az áldásnak az árát.
+  #Természetesen, abban az esetben is csak az id alapján kell feltüntetned.
+
+  #PÉLDA
+  #arazas:
+    #azenaldasom: 1000
+  
+  arazas:
+    regeneracio: 1000
+    torhetetlenseg: 1000
+    gyorsasag: 1000
+    ero: 1000
+
+#A plugin által kiírt üzenetek.
+uzenetek:
+  #Az üzenetek előtt megjelenő prefix.
+  prefix: "&6&lÁldás &f» "
+
+  #Maguk az üzenetek.
+  start: "&6%jatekos% &eegy &6%aldas% &eÁldást indított!"
+  start_megjegyzes: "&6Minden Áldás 1 óráig tart, szóval élvezzétek ki!"
+  folytatas: "§6%jatekos% §emegszakadt §6%aldas% §eÁldása folytatásra került!"
+  folytatas_megjegyzes: "§eAz Áldás még §6%ido%§e-ig tart!"
+  stop: "&eA(z) &6%aldas% &eÁldás meg lett szakítva!"
+  lejart: "&eA(z) &6%aldas% &eÁldás véget ért!"
+  nincs_eleg_egyenleged: "&cSajnálom, de nincs elég egyenleged az Áldás elindításához!"
+  ismeretlen_aldas: "&cIsmeretlen Áldást adtál meg!"
+  nem_megszakithato: "&cNincs jogosultságod az Áldások megállítására!"
+  folyamatban: "&cEz az Áldás már folyamatban van!"
+  nincs_jogosultsagod: "&cNincs jogosultságod a parancs használatára."
